@@ -1,0 +1,20 @@
+Browser:
+   > download Chrome
+   > install Chrome
+
+Driver:
+   > check Chrome Browser version: run - settings - about
+   > download appropriate driver version =  https://sites.google.com/chromium.org/driver/downloads
+   > create any dir and place downloaded driver to it
+   > add dir path to system path
+        Windows (PowerShell):
+           > run powershell as administrator
+           $ ($env:PATH).split(";")    // print all paths in PATH
+           $ [System.Environment]::GetEnvironmentVariable('PATH','machine') > <backup_file>
+           $ $INCLUDE = "<path_to_driver_directory>"                                         // temp variable
+           $ $OLDPATH = [System.Environment]::GetEnvironmentVariable('PATH','machine')       // temp variable
+           $ $NEWPATH = "$OLDPATH;$INCLUDE"                                                  // temp variable
+           $ [Environment]::SetEnvironmentVariable('PATH', '$NEWPATH', 'machine')
+           > close and open powershell
+           $ ($env:PATH).split(";")   // check result
+   $ chromedriver                     // check driver might be started

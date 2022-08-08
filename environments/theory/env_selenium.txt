@@ -1,0 +1,19 @@
+Install Selenium:
+
+   > activate virtual python environment
+   $ pip install selenium=<version>    // see last stable version on https://www.selenium.dev/downloads/
+
+Possible output:
+
+    Collecting selenium==4.3.0
+    Downloading selenium-4.3.0-py3-none-any.whl (981 kB)
+    ---------------------------------------- 981.4/981.4 KB 757.5 kB/s eta 0:00:00
+    Collecting urllib3[secure,socks]~=1.26
+    Using cached urllib3-1.26.11-py2.py3-none-any.whl (139 kB)
+    Collecting trio~=0.17
+    Downloading trio-0.21.0-py3-none-any.whl (358 kB)
+    ---------------------------------------- 359.0/359.0 KB 1.5 MB/s eta 0:00:00
+    ...
+    Collecting h11<1,>=0.9.0
+    Using cached h11-0.13.0-py3-none-any.whl (58 kB)
+    Installing collected packages: ...

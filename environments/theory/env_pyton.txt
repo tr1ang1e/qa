@@ -1,0 +1,16 @@
+Create virtual environment:
+    $ cd <proj_dir>
+    $ mkdir <env_dir> && cd <env_dir>
+    $ python -v venv <env_name>
+
+Work in virtual environment:
+   $ <env_dir>/<scripts>/<activate>     // should appear prompt: (env_name) $
+   $ ... work here ...
+   $ deactivate
+
+If work in Windows PowerShell (see 'about_Execution_Policies' in docs.microsoft.com):
+   > run powershell as Administrator
+   $ Get-ExecutionPolicy -List
+   $ Set-ExecutionPolicy -ExecutionPolicy <policy> -Scope <scope>      //  e.g.: AllSigned, LocalMachine
+   $ Get-ExecutionPolicy -List
+   > use powershell as usual
