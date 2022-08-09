@@ -4,15 +4,19 @@ from selenium.webdriver.common.by import By  # class for define element search m
 
 # specify options (is not used currently)
 options = webdriver.ChromeOptions()
-options.add_argument("")
+options.add_argument("--some-option")  # just for example, option must be valid!
 
 # initialize driver  >>  browser window must appear
-driver = webdriver.Chrome(chrome_options=options)
-sleep(5)
+driver = webdriver.Chrome()
 
-#   [ in] = web-address 
+#   [ in] = web-address
 driver.get("https://stepik.org/lesson/25969/step/12")
-sleep(5)
+
+# sometimes errors might appear because of low connection: script faster than internet
+# possible solutions:
+#   - WebDriverWait() method
+#   - made script sleep
+sleep(10)
 
 # find element on web page
 #   [ in] = search method 

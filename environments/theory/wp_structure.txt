@@ -1,0 +1,41 @@
+HTML elements:
+    1. tag              <tag> ... content ... <\tag>
+    2. attribute        attr="description"
+        - might be without description at all:   attr
+        - might be with empty description:       attr=""
+        - there are some pre-defined attributes, but they might be modified (and new might be created)
+        - predefined attributes:
+            href        ссылка
+            name        чаще всего используется как закладка для навигации по HTML разметке
+            id          строковый идентификатор
+            disabled    элемент показан, но неактивен
+            hidden      элемент не показан
+    3. hierarchy        special attribute 'class'
+
+CSS selector:
+    ...
+    button {            # selector
+      color: green;     # style: value
+    }
+
+Example:        HTML
+                <button> Кнопка </button>
+                <button disabled> Неактивная кнопка </button>
+
+                CSS, selector
+                button {
+                    background-color: #6c8;
+                    border: none;
+                    color: white;
+                    padding: 15px 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+
+                CCC, attribute
+                :disabled {
+                    opacity: 0.4;
+                    cursor: not-allowed;
+                }

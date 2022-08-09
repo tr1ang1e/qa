@@ -2,13 +2,23 @@ Basic links:
   > Selenium source code = https://github.com/SeleniumHQ/selenium
   > Selenium WebDriver as a Standard = https://www.w3.org/TR/webdriver1/
 
-Environment:
+
+[env] Environment:
   1. Python = https://www.python.org/ + virtual environments
   2. PyCharm IDE = https://www.jetbrains.com/pycharm/
   3. Selenium = https://www.selenium.dev/
   4. Browser:
      - Chrome = https://www.google.com/intl/ru/chrome/
      - Driver = https://sites.google.com/chromium.org/driver/downloads
+
+
+[wp] Web page:
+  1. Structure = HTML file, styles = CSS tables
+  2. How to find elements:
+     - CSS selectors
+     - tags or attributes
+     - Xpath
+
 
 Useful links: 
   > chromium command line options = https://peter.sh/experiments/chromium-command-line-switches/
