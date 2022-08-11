@@ -1,0 +1,21 @@
+CSS-selector = element to which a set of CSS rules apply
+practice: http://suninjuly.github.io/cats.html
+    > 'Inspect element'
+    > Ctrl+F
+    > try to find elements using following selectors
+
+Selectors:
+    universal       *                       all elements
+    tag             <value>                 elements with <value> tag name (input, div, span ...)
+    attribute       [<attr>="value"]        full match of specified attribute value
+        id          #<value>
+        class       .<value>                entry of value to specified attribute full value
+
+Combining selectors:
+    ''              AB                      element has simultaneously A and B selectors
+    ','             A , B                   element match A, B or both
+    ' '             A   B                   B elements inside A
+    '>'             A > B                   B is direct child of A
+    '~'             A ~ B                   all siblings of A, which follow after A
+    '~'             A + B                   B only if it immediately follows A
+    '||'            A || B                  all B, which are of the same column as A
